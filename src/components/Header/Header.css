@@ -1,0 +1,45 @@
+.navigationBar ul  li{
+    margin-left: 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.navigationBar li:hover{
+    color: var(--orange);
+}
+.logoContainer{
+    width: 10rem;
+}
+.hamburgerMenu{
+    display: none;
+}
+@media (max-width:1023px) {
+    .mobileNavbar li{
+        padding: 0.8rem 1.3rem;
+    }
+    .desktopNav{
+        display: none;
+    }
+    .mobileNavbar{
+        background-color:var(--appColor);
+        z-index: 5;
+        position: fixed;
+        right: 3.5rem;
+        top: 4.1rem;
+        flex-direction: column;
+    }
+    .navigationBar ul li{
+        margin-left: 0;
+        font-size: 0.8rem;
+    }
+    .hamburgerMenu{
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        background: var(--appColor);
+        padding: 0.5rem;
+        position: fixed;
+        z-index: 2;
+        right: 1.5rem;
+    }
+}

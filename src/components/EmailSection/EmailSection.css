@@ -1,0 +1,50 @@
+.readyToLevelText{
+    font-size: 2.7rem;
+}
+.readyText:before{
+    content: '';
+    display: block;
+    height: 0.2rem;
+    width: 8.2rem;
+    background: var(--orange);
+}
+.emailContainer{
+ padding: 0.5rem 2rem;
+ margin-right: 6rem;
+}
+.enterYourEmailContainer input{
+    padding: 1rem 1rem 1rem 0;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    font-size: 0.8rem;
+}
+.enterYourEmailContainer input:focus{
+    outline: 0;
+}
+.enterYourEmailContainer input::placeholder{
+    color: var(--lightgray);
+}
+.emailJoinNowBtn{
+    padding: 0.6rem;
+    width: 5rem;
+    border: 0;
+}
+@media (max-width:1023px) {
+    .emailSection{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+    .readyToLevelText{
+        font-size: 1.3rem;
+    }
+    .emailContainer{
+        margin-right: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

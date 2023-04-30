@@ -1,0 +1,13 @@
+.socialProfilesContainer{
+    border-top: 1px solid #fff;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.socialIcons{
+    width: 1.5rem;
+}
+.footerLogoContainer{
+    width: 8rem;
+    margin: auto;
+    padding-top: 3rem;
+}

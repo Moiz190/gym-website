@@ -1,0 +1,52 @@
+.startYourJourneyContainer{
+    font-size: 2.5rem;
+    max-width: 1080px;
+    font-style: italic;
+    width: 95%;
+    margin: 0 auto 5rem;
+}
+.planImageContainer{
+    width: 2rem;
+}
+.SubscriptionFee{
+    font-size: 2.5rem;
+}
+.whiteTickImageContainer{
+    width: 1rem;
+    min-width: 1rem;
+}
+.seeMoreBenefitContainer{
+    font-size: 0.8rem;
+}
+.seeMoreBenefitIcon{
+    min-width:13px;
+    width: 0.8rem;
+    padding-top: 0.1rem;
+}
+.joinNowBtnContainer button{
+    width: 100%;
+    padding: 0.7rem;
+    border: 0;
+    font-size: 0.9rem;
+}
+.SubscriptionCard:nth-child(2){
+    transform: scale(1.1);
+    background:var(--planCard);
+}
+.SubscriptionCard:nth-child(2) .joinNowBtn{
+    color:var(--orange)
+}
+@media (max-width:1023px) {
+    .startYourJourneyContainer{
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.7rem;
+        margin-bottom: 3rem;
+    }
+    .SubscriptionCardsContainer{
+        flex-direction: column;
+    }
+    .SubscriptionCard:nth-child(2){
+        transform: scale(1);
+    }
+}

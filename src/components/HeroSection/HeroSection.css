@@ -1,0 +1,223 @@
+.heroSectionContainer{
+    padding-top: 5rem;
+}
+
+.heroSectionDescriptionContainer{
+    background-color: var(--appColor);
+    position: relative;
+    display: flex;
+    margin-bottom: 2rem;
+    width: 22rem;
+}
+.descriptionAnimationContainer{
+    background-color: var(--orange);
+    position: absolute;
+    top: 0.2rem;
+    left: 0.5rem;
+    width: 5.7rem;
+    height: 2.8rem;
+    animation: loop 8s ease-in-out 0s infinite;
+}
+.heroSectiondescription{
+    position: relative;
+    z-index: 2;
+}
+@keyframes loop {
+    0%{
+        left: 0.5rem;
+    }
+    50%{
+        left: 72%; 
+        
+    }
+    100%{
+        left: 0.5rem;
+    }
+}
+.shapeyourbodyContainer{
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 7rem;
+    max-width: 650px;
+}
+.weWillHelpContainer{
+    font-size: 1.2rem;
+    max-width: 670px;
+}
+.plusIconContainer{
+    font-size: 2rem;
+    padding-bottom: 0.3rem;
+}
+.ourProgramsContainer{
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+.caloriesImageContainer{
+    width: 3rem;
+}
+.caloriesContainer{
+    font-size: 1.1rem;
+    bottom: 7.5rem;
+    left: -19rem;
+    animation: nope 2s ease-in-out;
+}
+@keyframes nope {
+    0%{
+        left: -22rem;
+    }
+    100%{
+        left: -19rem;
+    }
+}
+.caloriesAmount,.heartRateAmount{
+    font-size: 1.5rem;
+}
+.getStartedBtn ,.learnMoreBtn{
+    width: 8rem;
+    padding: 0.7rem 0.2rem;
+    transition: 0.3s;
+}
+.learnMoreBtn:hover{
+    background-color: var(--orange);
+}
+.getStartedBtn:hover{
+    background-color: #e58f32;
+}
+.heartRateContainer{
+    width: 8.5rem;
+    right: 4rem;
+    background-color: var(--appColor);
+    animation: linearBackward 2s ease-in-out;
+}
+@keyframes linearBackward {
+    0%{
+        right: 0;
+        opacity: 0;
+    }
+    100%{
+        right: 4rem;
+        opacity: 1;
+    }
+}
+.heartImageContainer{
+    width: 2rem;
+}
+.heroSectionImage{
+    width: 21rem;
+    left: -10rem;
+    top: 10rem;
+    z-index: 1;
+}
+.heroSectionBackgroundImage{
+    width: 14rem;
+    left: -14rem;
+    top: 4rem;
+    animation: Backwardanimation 12s ease-in-out;
+}
+@keyframes Backwardanimation {
+    0%{
+       left: 0rem; 
+    }
+    10%{
+        left: -14rem;
+    }
+}
+@media (min-width:1024px) and (max-width:1300px) {
+    .caloriesContainer{
+        bottom: 0;
+    }
+    .heroSectionImage{
+        top: 13rem;
+    }
+}
+@media (max-width:1023px){
+    .heroSection{
+        flex-direction: column;
+    }
+    .heroSectionContainer{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: center;
+    }
+    .heroSectionDescriptionContainer{
+       margin: 0rem auto 2rem;
+       font-size: 0.8rem;
+       width: 18rem;
+       padding: 1.2rem;
+    }
+    .descriptionAnimationContainer{
+        width: 4.8rem;
+    }
+    .shapeyourbodyContainer{
+        font-size: 2.5rem;
+        line-height: 5rem;
+        max-width: 300px;
+    }
+    .weWillHelpContainer,.shapeyourbodyContainer,.ourProgramsContainer,.getStartedButtonContainer{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .caloriesContainer{
+        position: relative;
+        left: 2rem;
+        width: 15rem;
+        bottom: -3rem;
+        font-size: 0.8rem;
+        animation: linearBackward 2s ease-in-out;
+    }
+    .caloriesAmount{
+        font-size: 1rem;
+    }
+    .caloriesImageContainer{
+        width: 2rem;
+    }
+    .ourProgramsContainer{
+        font-size:0.8rem;
+        gap: 1rem;
+    }
+    .weWillHelpContainer,.ourProgramsContainer,.getStartedButtonContainer{
+        max-width: 360px;
+    }
+    .ourcoaches,.getStartedButtonContainer{
+        justify-content: center;
+    }
+    .membersNumber,.plusIconContainer{
+        font-size: 1rem;
+    }
+    .joinNowContainer{
+        background-color: inherit;
+    }
+    .joinNowBtn{
+        font-size: 0.8rem;
+        padding: 0.6rem;
+    }
+    .heroSectionImage{
+        position: relative;
+        top: 1rem;
+        left: 55%;
+        transform: translateX(-39%);
+        width: 12rem;
+    }
+    .heartRateContainer{
+        font-size: 0.8rem;
+        left: 0.5rem;
+        width: 6.7rem;
+    }
+    .heartRateAmount{
+        font-size: 1.2rem;
+    }
+    .heroSectionBackgroundImage{
+        left: 50%;
+        transform: translateX(-65%);
+        width: 11rem;
+        top: 4rem;
+        z-index: -1;
+        animation: none;
+    }
+    .exploreProgramHeadingContainer{
+        flex-direction: column;
+    }
+    .exploreProgramHeadingContainer > span{
+        font-size: 1.7rem;
+    }
+}
